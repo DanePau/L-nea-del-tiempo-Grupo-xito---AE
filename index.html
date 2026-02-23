@@ -246,21 +246,18 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-brand">⚙ GRUPO ÉXITO · CASO DE ESTUDIO AE</div>
-  <div class="footer-meta">EQUIPO: ANDRES SOSA · DANELLYS IRIARTE · JHON RANGEL</div>
-  <div class="footer-meta">FUENTES: XERTICA.AI · STIBO SYSTEMS · INFORME GESTIÓN 2021</div>
+  <div class="footer-meta">EQUIPO: ANDRÉS SOSA · DANELLYS IRIARTE · JHON RANGEL</div>
+  
+  <a href="https://drive.google.com/file/d/1mkq4MTHAWDlQrUMUbP4pPxCR0q3O46kU/view?usp=sharing" 
+     target="_blank" 
+     rel="noopener noreferrer">
+    REFERENCIAS BIBLIOGRÁFICAS ↗
+  </a>
+
 </footer>
 
-<script>
-  const entries = document.querySelectorAll('.entry');
-  const obs = new IntersectionObserver((items) => {
-    items.forEach((item, i) => {
-      if (item.isIntersecting) {
-        setTimeout(() => item.target.classList.add('visible'), i * 140);
-        obs.unobserve(item.target);
-      }
-    });
-  }, { threshold: 0.08 });
-  entries.forEach(e => obs.observe(e));
-</script>
+<!-- SCRIPT -->
+<script src="index.js"></script>
+
 </body>
 </html>

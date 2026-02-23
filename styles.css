@@ -12,7 +12,6 @@
   --border:   #C8C0B0;
   --pipe:     #8A9BAE;
 }
-
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 body {
   background: var(--bg);
@@ -324,4 +323,18 @@ footer {
   .comp-block.asis{border-bottom:none;}
   header h1{font-size:2.4rem;}
   .stat-bar{flex-wrap:wrap;}
+}
+
+
+/* Referencias Bibliograficas */
+footer a {
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  transition: color .2s, border-color .2s;
+}
+
+footer a:hover {
+  color: var(--gold);
+  border-color: var(--gold);
 }
